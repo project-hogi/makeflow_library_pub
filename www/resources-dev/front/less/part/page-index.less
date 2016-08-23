@@ -1,0 +1,118 @@
+.page-index{
+	margin-top: -20px;
+	
+	.visual{
+		height: 174px;
+		background: url("@{basePartImageDir}page-index/visual.jpg") no-repeat 0 0;
+	}
+	.latest{
+		position: relative;
+		display: block;
+		margin: 24px auto;
+		padding: 49px 180px 0 86px;
+		width: 610px - 86px - 180px;
+		height: 140px - 49px;
+		background: url("@{basePartImageDir}page-index/latest.png") no-repeat 0 0;
+		
+		.title{
+			position: absolute;
+			left: 74px;
+			top: 11px;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 1.4em;
+			color: #555;
+		}
+		ul{
+			li{
+				a{
+					display: block;
+					font-size: 12px;
+					line-height: 22px;
+					color: #737373;
+					#util>.ellipsis();
+				}
+			}
+		}
+	}
+	.row{
+		margin: 0 -14px;
+		background: url("@{basePartImageDir}page-index/latest-5.png") no-repeat 100% 100%;
+	}
+	.col-xs-6{
+		padding: 0 14px;
+		width: 318px;
+	}
+	.latest, .latest-1, .latest-2, .latest-3{
+		.more{
+			position: absolute;
+			right: 12px;
+			top: 10px;
+			display: inline-block;
+			width: 36px;
+			height: 23px;
+			background: url("@{basePartImageDir}page-index/latest-more.png") no-repeat 0 0;
+		}
+	}
+	.latest-1, .latest-2, .latest-3{
+		display: block;
+		margin-bottom: 29px;
+		position: relative;
+		background: url("@{basePartImageDir}page-index/latest-3.png") no-repeat 0 0;
+		
+		.title{
+			position: absolute;
+			left: 23px;
+			top: 13px;
+			padding-left: 18px;
+			background: url("@{basePartImageDir}page-index/latest-2.png") no-repeat 0 50%;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 14px;
+			color: #555;
+		}
+		ul{
+			padding: 40px 26px 0 135px;
+			
+			li{
+				border-top: 1px dotted #9dba00;
+				
+				a{
+					display: block;
+					#util>.ellipsis();
+					background: url("@{basePartImageDir}page-index/latest-1.png") no-repeat 0 50%;
+					padding-left: 8px;
+					font-size: 11px;
+					line-height: 22px;
+					color: #737373;
+					transition: color .3s;
+					
+					&:hover, &:focus{
+						color: #000;
+					}
+				}
+				&:first-child{
+					border-top: none;
+				}
+			}
+		}
+	}
+	.latest-1, .latest-2{
+		height: 155px;
+	}
+	.latest-2{
+		background: url("@{basePartImageDir}page-index/latest-4.png") no-repeat 0 0;
+		
+		.title{
+			background-image: url("@{basePartImageDir}page-index/latest-2-2.png");
+		}
+	}
+	.latest-3{
+		background-image: url("@{basePartImageDir}page-index/latest-3-3.png");
+		height: 247px;
+		
+		.title{
+			background-image: url("@{basePartImageDir}page-index/latest-2-3.png");
+		}
+	}
+}
