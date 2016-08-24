@@ -9,7 +9,6 @@
 	<table class="table-primary search1">
 		<col />
 		<col />
-		<caption class="sr-only"></caption>
 		<tr>
 			<th>검&nbsp;&nbsp;&nbsp;색&nbsp;&nbsp;&nbsp;어</th>
 			<td>

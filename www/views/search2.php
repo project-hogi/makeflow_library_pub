@@ -4,7 +4,7 @@
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
 <div class="module-content">
-
+<form action="">
 <table class="table-primary search2">
   <tbody>
     <tr>
@@ -230,7 +230,11 @@
     </tr>
   </tbody>
 </table>
-
+<div class="btn_group">
+	<input type="submit" class="btn search_btn" value="검&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;색"/>
+	<input type="button" class="btn rewrite_btn" value="다시쓰기"/>
+</div>
+</form>
 
 
 
