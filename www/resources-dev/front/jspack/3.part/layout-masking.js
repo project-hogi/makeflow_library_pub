@@ -24,6 +24,8 @@
 		$('.lnb li').on('mouseleave',function(){
 			$('.lnb li').removeClass('on')
 		});
+//		$('.search3 td:nth-of-type(2)').addClass('tal')
+//		$('.search3 td:nth-of-type(4)').addClass('tal')
 		
 		
 	});

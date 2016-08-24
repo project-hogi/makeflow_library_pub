@@ -1,6 +1,7 @@
 .module-content{
 	padding-left: 30px;
 	padding-right: 25px;
+	padding: 0 25px 30px 30px;
 }
 .page-title{
 	min-height:53px;
@@ -22,6 +23,12 @@
  	border-top: 2px solid #8c37d7;
 	width: 100%;
 	
+	caption{
+		font-size: 10px;
+		text-align: right;
+		
+	}
+	
 	tr{
 		th,td{
 			vertical-align: middle;
@@ -33,6 +40,7 @@
 			text-align: center;
 			color: #737373;
 			background-color: #f7effd;
+			padding: 10px;
 		}
 		td{
 			font-size: 11px;
@@ -51,6 +59,21 @@
 .box-xs{
 	width: 63px;
 }
+.tal{
+	text-align: left !important;
+}
+.tac{
+	text-align: center !important;
+}
+.tar{
+	text-align: right !important;
+}
+.pointer{
+	padding-left: 18px;
+	background: url("@{basePartImageDir}page-sub/pointer.png") no-repeat 5px 50%;
+}
+
+
 
 .btn_group{
 		float: right;
@@ -132,14 +155,117 @@
 			}
 		}
 	}
-	
 }
 /* search3 */
+.search3{
+	&.table-primary{
+		td{
+			text-align: center;
+		}
+	}
+	
+}
+.tab-index{
+	display: table;
+	
+	a{
+		display: table-cell;
+		font-size: 11px;
+		color: #333;
+		
+		&:first-child{
+			color: #00b9f2;
+		}
+	}
+	span{
+		display: table-cell;
+		font-size: 8px;
+		padding: 0 5px;
+		vertical-align: middle;
+	}
+	
+}
 
-
-
-
-
+.tab-menu{
+	width: 610px;
+	height: 144px;
+	background: url("@{basePartImageDir}page-sub/tab-menu.png") no-repeat 0 0;
+	margin-bottom: 15px;
+	
+	ul{
+		padding-left: 140px;
+		height: 100%;
+		
+		&:after{
+			clear: both;display: block;content: '';
+		}
+		li{
+			display: table;
+			width: 115px;
+			float: left;
+			font-size: 12px;
+			line-height: 1.2;
+			height: 45px;
+			
+			a{
+				display: table-cell;
+				vertical-align: middle;
+				padding-right: 10px;
+			}
+			/*
+			&:before{
+				display: inline-block;
+				content: '';
+				width: 1px;
+				height: 100%;
+				vertical-align: middle;
+			}
+			*/
+		}
+	}
+}
+.ps{
+	font-size: 11px;margin: 10px 0 5px 0;
+}
+.table-pager{
+	text-align: center;
+	
+	.pager_list{
+		display: inline-block;
+		
+		
+	}
+	.page-control{
+		display: inline-block;
+		position: relative;
+		left: 8px;
+		top: 5px;
+		
+		.next{
+			display: inline-block;
+			width: 12px;
+			height: 11px;
+			background: url("@{basePartImageDir}page-sub/next-icon.png") no-repeat 0 0;
+			
+			
+			&.tab{
+				background-position: 3px 3px;
+			}
+			&.page{
+				background-position: -13px 3px;
+			}
+		}
+	}
+	
+	a{
+		font-size: 12px;
+		color: #92ac33;
+ 		padding: 3px;
+	}
+	
+	
+	
+}
 
 
 
