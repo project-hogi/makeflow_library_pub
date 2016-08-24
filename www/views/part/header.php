@@ -5,10 +5,10 @@
 			<h1 class="site-logo"><a href="/" style="background-image: url(<?php echo $config["imageDir"]; ?>/_temp/logo.png);"><span class="sr-only"><?php echo $config["sitename"]; ?></span></a></h1>
 			<div class="lnb">
 				<ul>
-					<li<?php if(getDepthId(0) == "introduce"){ ?> class="on"<?php } ?>><a href="introduce.php">도서관 소개</a></li>
-					<li<?php if(getDepthId(0) == "search"){ ?> class="on"<?php } ?>><a href="search.php">도서검색</a></li>
-					<li<?php if(getDepthId(0) == "info"){ ?> class="on"<?php } ?>><a href="info.php">도서정보</a></li>
-					<li<?php if(getDepthId(0) == "community"){ ?> class="on"<?php } ?>><a href="community.php">이용자 마당</a></li>
+					<li<?php if(getDepthId($pagePath, 0) == "introduce"){ ?> class="on"<?php } ?>><a href="introduce.php">도서관 소개</a></li>
+					<li<?php if(getDepthId($pagePath, 0) == "search"){ ?> class="on"<?php } ?>><a href="search.php">도서검색</a></li>
+					<li<?php if(getDepthId($pagePath, 0) == "info"){ ?> class="on"<?php } ?>><a href="info.php">도서정보</a></li>
+					<li<?php if(getDepthId($pagePath, 0) == "community"){ ?> class="on"<?php } ?>><a href="community.php">이용자 마당</a></li>
 				</ul>
 			</div>
 			<div class="gnb">
@@ -29,7 +29,7 @@
 				<div class="container">
 					<span class="qnb"></span>
 					<div class="snb">
-						<?php if(getDepthId(0) == "index"){ ?>
+						<?php if(getDepthId($pagePath, 0) == "index"){ ?>
 							<form action="" method="post">
     							<div class="account">
     								<storng class="title sr-only">Member Login</storng>
@@ -138,14 +138,14 @@
 						<?php } ?>
 					</div>
     				<div id="content">
-						<?php if(getDepthId(0) != "index"){ ?>
+						<?php if(getDepthId($pagePath, 0) != "index"){ ?>
                 			<h2 class="page-title">
                 				<div class="container">
                 					<div>
-                						<?php if(getDepthId(0) == "introduce"){ ?>도서관 소개<?php }
-                						else if(getDepthId(0) == "maskingHistory"){ ?>도서검색<?php }
-                						else if(getDepthId(0) == "info"){ ?>도서정보<?php }
-                						else if(getDepthId(0) == "community"){ ?>이용자 마당<?php }
+                						<?php if(getDepthId($pagePath, 0) == "introduce"){ ?>도서관 소개<?php }
+                						else if(getDepthId($pagePath, 0) == "maskingHistory"){ ?>도서검색<?php }
+                						else if(getDepthId($pagePath, 0) == "info"){ ?>도서정보<?php }
+                						else if(getDepthId($pagePath, 0) == "community"){ ?>이용자 마당<?php }
                 						else{ ?>페이지 타이틀<?php } ?>
                 					</div>
                 				</div>
