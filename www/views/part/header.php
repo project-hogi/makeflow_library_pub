@@ -5,10 +5,49 @@
 			<h1 class="site-logo"><a href="/" style="background-image: url(<?php echo $config["imageDir"]; ?>/_temp/logo.png);"><span class="sr-only"><?php echo $config["sitename"]; ?></span></a></h1>
 			<div class="lnb">
 				<ul>
-					<li<?php if(getDepthId(0) == "introduce"){ ?> class="on"<?php } ?>><a href="introduce.php">도서관 소개</a></li>
-					<li<?php if(getDepthId(0) == "search"){ ?> class="on"<?php } ?>><a href="search.php">도서검색</a></li>
-					<li<?php if(getDepthId(0) == "info"){ ?> class="on"<?php } ?>><a href="info.php">도서정보</a></li>
-					<li<?php if(getDepthId(0) == "community"){ ?> class="on"<?php } ?>><a href="community.php">이용자 마당</a></li>
+					<li<?php if(getDepthId(0) == "introduce"){ ?> class="on"<?php } ?>>
+						<a href="introduce.php">도서관 소개</a>
+						<ul>
+							<li><a href="introduce.php">인사말</a></li>
+							<li><a href="introduce.php">도서관 소개</a></li>
+							<li><a href="introduce.php">연혁</a></li>
+							<li><a href="introduce.php">찾아오시는 길</a></li>
+							<li><a href="introduce.php">시설현황</a></li>
+							<li><a href="introduce.php">이용안내</a></li>
+							<li><a href="introduce.php">일정관리</a></li>
+						</ul>
+
+					</li>
+					<li<?php if(getDepthId(0) == "search"){ ?> class="on"<?php } ?>>
+						<a href="search.php">도서검색</a>
+						<ul>
+							<li><a href="search.php">간략 검색</a></li>
+							<li><a href="search.php">상세검색</a></li>
+							<li><a href="search.php">분류검색1</a></li>
+							<li><a href="search.php">분류검색2</a></li>
+							<li><a href="search.php">분류검색3</a></li>
+						</ul>
+					</li>
+					<li<?php if(getDepthId(0) == "info"){ ?> class="on"<?php } ?>>
+						<a href="info.php">도서정보</a>
+						<ul>
+							<li><a href="info.php">신간도서</a></li>
+							<li><a href="info.php">희망도서</a></li>
+							<li><a href="info.php">추천도서</a></li>
+							<li><a href="info.php">권장도서</a></li>
+							<li><a href="info.php">베스트대출목록</a></li>
+						</ul>
+					</li>
+					<li<?php if(getDepthId(0) == "community"){ ?> class="on"<?php } ?>>
+						<a href="community.php">이용자 마당</a>
+						<ul>
+							<li><a href="community.php">공지사항</a></li>
+							<li><a href="community.php">자주묻는 질문</a></li>
+							<li><a href="community.php">Q&amp;A</a></li>
+							<li><a href="community.php">독후활동</a></li>
+							<li><a href="community.php">자유게시판</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="gnb">
@@ -28,8 +67,9 @@
 			<div class="container-body">
 				<div class="container">
 					<span class="qnb"></span>
+					<?php if(getDepthId(0) == "index"){ ?>
 					<div class="snb">
-						<?php if(getDepthId(0) == "index"){ ?>
+						
 							<form action="" method="post">
     							<div class="account">
     								<storng class="title sr-only">Member Login</storng>
@@ -51,17 +91,16 @@
     							</div>
 							</form>
 							<div class="calendar">
-								<div><span class="sr-only">도서관 휴관일</span></div>
+								<div class="head"><span class="sr-only">도서관 휴관일</span></div>
 								<table>
-									<caption></caption>
 									<colgroup>
+										<col class="sun">
 										<col />
 										<col />
 										<col />
 										<col />
 										<col />
-										<col />
-										<col />
+										<col class="sat"/>
 									</colgroup>
 									<thead>
 										<tr>
@@ -109,7 +148,7 @@
 											<td class="holiday">21</td>
 											<td>22</td>
 											<td>23</td>
-											<td>24</td>
+											<td class="today">24</td>
 											<td>25</td>
 											<td>26</td>
 											<td class="holiday">27</td>
@@ -131,12 +170,51 @@
 									</tfoot>
 								</table>
 							</div>
-							
+						</div>	
 							
 						<?php }else{ ?>
-							sub
-						<?php } ?>
+						<div class="snb sub-page">
+							<form action="" method="post">
+    							<div class="account">
+    								<storng class="title sr-only">Member Login</storng>
+    								<div class="forms">
+        								<label><span class="sr-only">ID</span> <input type="text" /></label>
+        								<label><span class="sr-only">PW</span> <input type="password" /></label>
+    								</div>
+    								<span class="find-id-and-pw">
+        								<a href="#">아이디</a> / 
+        								<a href="#">비밀번호찾기</a> 
+    								</span>
+    								<input type="submit" class="submit" value="Login" />
+    							</div>
+							</form>
+							<form action="" method="post">
+    							<div class="dic-search-bar">
+    								<input type="text" />
+    								<input type="submit" class="submit" />
+    							</div>
+							</form>
+							<div class="sub_introduce">
+								<div class="head"><span class="sr-only">도서관 소개</span></div>
+								<ul>
+									<li><a href="#none">인사말</a></li>
+									<li><a href="#none">도서관소개</a></li>
+									<li><a href="#none">연혁</a></li>
+									<li><a href="#none">찾아오시는 길</a></li>
+									<li><a href="#none">시설현황</a></li>
+									<li><a href="#none">이용안내</a></li>
+									<li><a href="#none">일정관리</a></li>
+								</ul>
+							</div>
+							<div class="quick_link">
+								<li class="eq-01"><a href="#none"><span class="sr-only">예약 도서</span></a></li>
+								<li class="eq-02"><a href="#none"><span class="sr-only">대출 조회</span></a></li>
+								<li class="eq-03"><a href="#none"><span class="sr-only">독후감 쓰기</span></a></li>
+							</div>
+							
+							
 					</div>
+					<?php } ?>
     				<div id="content">
 						<?php if(getDepthId(0) != "index"){ ?>
                 			<h2 class="page-title">
@@ -152,6 +230,24 @@
                 			</h2>
 						<?php } ?>
 <!-- //Header.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

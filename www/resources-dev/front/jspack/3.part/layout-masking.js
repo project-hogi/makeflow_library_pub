@@ -15,6 +15,16 @@
 				$content.height($(this).height() - otherHeight);
 			}).trigger("resizeCanvas");
 		});
+		
+		$('.lnb li').on('mouseover',function(){
+			$('.lnb li').removeClass('on')
+			$(this).addClass('on');
+		});
+		
+		$('.lnb li').on('mouseleave',function(){
+			$('.lnb li').removeClass('on')
+		});
+		
 	});
 
 })(jQuery);
