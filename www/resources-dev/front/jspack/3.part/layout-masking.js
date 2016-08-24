@@ -25,6 +25,7 @@
 			$('.lnb li').removeClass('on')
 		});
 		
+		
 	});
 
 })(jQuery);

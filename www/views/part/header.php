@@ -22,10 +22,10 @@
 						<a href="search.php">도서검색</a>
 						<ul>
 							<li><a href="search.php">간략 검색</a></li>
-							<li><a href="search.php">상세검색</a></li>
-							<li><a href="search.php">분류검색1</a></li>
-							<li><a href="search.php">분류검색2</a></li>
-							<li><a href="search.php">분류검색3</a></li>
+							<li><a href="search2.php">상세검색</a></li>
+							<li><a href="search3.php">분류검색1</a></li>
+							<li><a href="search4.php">분류검색2</a></li>
+							<li><a href="search5.php">분류검색3</a></li>
 						</ul>
 					</li>
 					<li<?php if(getDepthId($pagePath, 0) == "info"){ ?> class="on"<?php } ?>>
@@ -218,16 +218,16 @@
     				<div id="content">
 						<?php if(getDepthId($pagePath, 0) != "index"){ ?>
                 			<h2 class="page-title">
-                				<div class="container">
-                					<div>
-                						<?php if(getDepthId($pagePath, 0) == "introduce"){ ?>도서관 소개<?php }
-                						else if(getDepthId($pagePath, 0) == "maskingHistory"){ ?>도서검색<?php }
-                						else if(getDepthId($pagePath, 0) == "info"){ ?>도서정보<?php }
-                						else if(getDepthId($pagePath, 0) == "community"){ ?>이용자 마당<?php }
-                						else{ ?>페이지 타이틀<?php } ?>
-                					</div>
-                				</div>
+            					<div>
+            						<?php if(getDepthId($pagePath, 0) == "introduce"){ ?>도서관 소개<?php }
+            						else if(getDepthId($pagePath, 0) == "maskingHistory"){ ?>도서검색<?php }
+            						else if(getDepthId($pagePath, 0) == "info"){ ?>도서정보<?php }
+            						else if(getDepthId($pagePath, 0) == "community"){ ?>이용자 마당<?php }
+            						else{ ?>페이지 타이틀<?php } ?>
+            					</div>
                 			</h2>
+                			
+                			
 						<?php } ?>
 <!-- //Header.html -->
 

@@ -28,7 +28,7 @@
 			<h1 class="site-logo"><a href="/" style="background-image: url(../resources/front/images/_temp/logo.png);"><span class="sr-only">ㅇㅇㅇ</span></a></h1>
 			<div class="lnb">
 				<ul>
-					<li class="on">
+					<li>
 						<a href="introduce.html">도서관 소개</a>
 						<ul>
 							<li><a href="introduce.html">인사말</a></li>
@@ -41,7 +41,7 @@
 						</ul>
 
 					</li>
-					<li>
+					<li class="on">
 						<a href="search.html">도서검색</a>
 						<ul>
 							<li><a href="search.html">간략 검색</a></li>
@@ -134,7 +134,7 @@
 					    				<div id="content">
 						                			<h2 class="page-title">
             					<div>
-            						도서관 소개            					</div>
+            						페이지 타이틀            					</div>
                 			</h2>
                 			
                 			
@@ -169,6 +169,47 @@
 
 
 
+
+<div class="module-content">
+
+<form action="">
+	<table class="table-primary search1">
+		<col />
+		<col />
+		<caption class="sr-only"></caption>
+		<tr>
+			<th>검&nbsp;&nbsp;&nbsp;색&nbsp;&nbsp;&nbsp;어</th>
+			<td>
+				<input type="text" />
+			</td>
+		</tr>
+		<tr>
+			<th>자 료 유 형</th>
+			<td>
+				<input type="checkbox" id="pds_type-1" value="pds_type-1" checked/><label for="pds_type-1">전체</label>
+				<input type="checkbox" id="pds_type-2" value="pds_type-2" /><label for="pds_type-2">단행본</label>
+				<input type="checkbox" id="pds_type-3" value="pds_type-3" /><label for="pds_type-3">연속간행물</label>
+				<input type="checkbox" id="pds_type-4" value="pds_type-4" /><label for="pds_type-4">멀티미디어/비도서</label>
+			</td>
+		</tr>
+		<tr>
+			<th>검 색 조 건</th>
+			<td>
+				<input type="checkbox" id="include_type-1" value="include_type-1" checked/><label for="include_type-1">대출도서포함</label>
+				<input type="checkbox" id="include_type-2" value="include_type-1" checked/><label for="include_type-2">예약도서포함</label>
+			</td>
+		</tr>
+	</table>
+	<div class="btn_group">
+		<input type="submit" class="btn search_btn" value="검&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;색"/>
+		<input type="button" class="btn rewrite_btn" value="다시쓰기"/>
+	</div>
+</form>
+
+
+
+</div>
+<!-- /.module-content -->
 
 <!-- Footer.html -->
     				</div>
