@@ -33,8 +33,8 @@
 		</tr>
 	</table>
 	<div class="btn_group">
-		<input type="submit" class="btn search_btn" value="검&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;색"/>
-		<input type="button" class="btn rewrite_btn" value="다시쓰기"/>
+		<input type="submit" class="btn-oldst search_btn" value="검&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;색"/>
+		<input type="button" class="btn-oldst rewrite_btn" value="다시쓰기"/>
 	</div>
 </form>
 

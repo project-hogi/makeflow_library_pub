@@ -30,7 +30,7 @@
 
 
 <table class="table-primary search3">
-	<caption><span class="pointer"></span>검색 도서 : <span>3308</span>건</caption>
+	<caption><span class="pointer"></span>검색 도서 : <span class="counter">3308</span>건</caption>
   <thead>
     <tr>
       <th>번호</th>

@@ -29,23 +29,23 @@
 						</ul>
 					</li>
 					<li<?php if(getDepthId($pagePath, 0) == "info"){ ?> class="on"<?php } ?>>
-						<a href="info.php">도서정보</a>
+						<a href="book.php">도서정보</a>
 						<ul>
-							<li><a href="info.php">신간도서</a></li>
-							<li><a href="info.php">희망도서</a></li>
-							<li><a href="info.php">추천도서</a></li>
-							<li><a href="info.php">권장도서</a></li>
-							<li><a href="info.php">베스트대출목록</a></li>
+							<li><a href="book.php">신간도서</a></li>
+							<li><a href="book2.php">희망도서</a></li>
+							<li><a href="book3.php">추천도서</a></li>
+							<li><a href="book4.php">권장도서</a></li>
+							<li><a href="book5.php">베스트대출목록</a></li>
 						</ul>
 					</li>
 					<li<?php if(getDepthId($pagePath, 0) == "community"){ ?> class="on"<?php } ?>>
 						<a href="community.php">이용자 마당</a>
 						<ul>
 							<li><a href="community.php">공지사항</a></li>
-							<li><a href="community.php">자주묻는 질문</a></li>
-							<li><a href="community.php">Q&amp;A</a></li>
-							<li><a href="community.php">독후활동</a></li>
-							<li><a href="community.php">자유게시판</a></li>
+							<li><a href="community2.php">자주묻는 질문</a></li>
+							<li><a href="community3.php">Q&amp;A</a></li>
+							<li><a href="community4.php">독후활동</a></li>
+							<li><a href="community5.php">자유게시판</a></li>
 						</ul>
 					</li>
 				</ul>
