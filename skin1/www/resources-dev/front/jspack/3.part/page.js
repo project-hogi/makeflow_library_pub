@@ -38,8 +38,9 @@
 			var $dt = $qna.find('>dt');
 			var $dd = $qna.find('>dd');
 			$dt.on('click',function(){
-				$dd.removeClass('on');
-				$(this).next('dd').addClass('on');
+				$(this).next('dd').slideToggle();
+				// $dd.removeClass('on');
+				// $(this).next('dd').addClass('on');
 			});
 
 		});

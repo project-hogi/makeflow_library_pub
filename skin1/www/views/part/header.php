@@ -6,46 +6,46 @@
 			<div class="lnb">
 				<ul>
 					<li<?php if(getDepthId($pagePath, 0) == "introduce"){ ?> class="on"<?php } ?>>
-						<a href="introduce.php">도서관 소개</a>
+						<a href="introduce-1.php">도서관 소개</a>
 						<ul>
-							<li><a href="introduce.php">인사말</a></li>
-							<li><a href="introduce.php">도서관 소개</a></li>
-							<li><a href="introduce.php">연혁</a></li>
-							<li><a href="introduce.php">찾아오시는 길</a></li>
-							<li><a href="introduce.php">시설현황</a></li>
-							<li><a href="introduce.php">이용안내</a></li>
-							<li><a href="introduce.php">일정관리</a></li>
+							<li><a href="introduce-1.php">인사말</a></li>
+							<li><a href="introduce-2.php">도서관 소개</a></li>
+							<li><a href="introduce-3.php">연혁</a></li>
+							<li><a href="introduce-4.php">찾아오시는 길</a></li>
+							<li><a href="introduce-5.php">시설현황</a></li>
+							<li><a href="introduce-6.php">이용안내</a></li>
+							<li><a href="introduce-7.php">일정관리</a></li>
 						</ul>
 
 					</li>
 					<li<?php if(getDepthId($pagePath, 0) == "search"){ ?> class="on"<?php } ?>>
-						<a href="search.php">도서검색</a>
+						<a href="search-1.php">도서검색</a>
 						<ul>
-							<li><a href="search.php">간략 검색</a></li>
-							<li><a href="search2.php">상세검색</a></li>
-							<li><a href="search3.php">분류검색1</a></li>
-							<li><a href="search4.php">분류검색2</a></li>
-							<li><a href="search5.php">분류검색3</a></li>
+							<li><a href="search-1.php">간략 검색</a></li>
+							<li><a href="search-2.php">상세검색</a></li>
+							<li><a href="search-3.php">분류검색1</a></li>
+							<li><a href="search-4.php">분류검색2</a></li>
+							<li><a href="search-5.php">분류검색3</a></li>
 						</ul>
 					</li>
-					<li<?php if(getDepthId($pagePath, 0) == "info"){ ?> class="on"<?php } ?>>
-						<a href="book.php">도서정보</a>
+					<li<?php if(getDepthId($pagePath, 0) == "book"){ ?> class="on"<?php } ?>>
+						<a href="book-1.php">도서정보</a>
 						<ul>
-							<li><a href="book.php">신간도서</a></li>
-							<li><a href="book2.php">희망도서</a></li>
-							<li><a href="book3.php">추천도서</a></li>
-							<li><a href="book4.php">권장도서</a></li>
-							<li><a href="book5.php">베스트대출목록</a></li>
+							<li><a href="book-1.php">신간도서</a></li>
+							<li><a href="book-2.php">희망도서</a></li>
+							<li><a href="book-3.php">추천도서</a></li>
+							<li><a href="book-4.php">권장도서</a></li>
+							<li><a href="book-5.php">베스트대출목록</a></li>
 						</ul>
 					</li>
 					<li<?php if(getDepthId($pagePath, 0) == "community"){ ?> class="on"<?php } ?>>
-						<a href="community.php">이용자 마당</a>
+						<a href="community-1.php">이용자 마당</a>
 						<ul>
-							<li><a href="community.php">공지사항</a></li>
-							<li><a href="community2.php">자주묻는 질문</a></li>
-							<li><a href="community3.php">Q&amp;A</a></li>
-							<li><a href="community4.php">독후활동</a></li>
-							<li><a href="community5.php">자유게시판</a></li>
+							<li><a href="community-1.php">공지사항</a></li>
+							<li><a href="community-2.php">자주묻는 질문</a></li>
+							<li><a href="community-3.php">Q&amp;A</a></li>
+							<li><a href="community-4.php">독후활동</a></li>
+							<li><a href="community-5.php">자유게시판</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -211,23 +211,70 @@
 								<li class="eq-02"><a href="#none"><span class="sr-only">대출 조회</span></a></li>
 								<li class="eq-03"><a href="#none"><span class="sr-only">독후감 쓰기</span></a></li>
 							</div>
-							
-							
+
 					</div>
 					<?php } ?>
     				<div id="content">
 						<?php if(getDepthId($pagePath, 0) != "index"){ ?>
                 			<h2 class="page-title">
             					<div>
-            						<?php if(getDepthId($pagePath, 0) == "introduce"){ ?>도서관 소개<?php }
-            						else if(getDepthId($pagePath, 0) == "maskingHistory"){ ?>도서검색<?php }
-            						else if(getDepthId($pagePath, 0) == "info"){ ?>도서정보<?php }
-            						else if(getDepthId($pagePath, 0) == "community"){ ?>이용자 마당<?php }
-            						else{ ?>페이지 타이틀<?php } ?>
+									<?php if(getDepthId($pagePath, 0) == "introduce"){ ?>
+										<?php if(getDepthId($pagePath, 1) == "1"){ ?>
+											인사말
+										<?php }else if(getDepthId($pagePath, 1) == "2"){ ?>
+											도서관 소개
+										<?php }else if(getDepthId($pagePath, 1) == "3"){ ?>
+											연혁
+										<?php }else if(getDepthId($pagePath, 1) == "4"){ ?>
+											찾아오시는 길
+										<?php }else if(getDepthId($pagePath, 1) == "5"){ ?>
+											시설현황
+										<?php }else if(getDepthId($pagePath, 1) == "6"){ ?>
+											이용안내
+										<?php }else if(getDepthId($pagePath, 1) == "7"){ ?>
+											일정관리
+										<?php } ?>
+									<?php }else if(getDepthId($pagePath, 0) == "search"){ ?>
+										<?php if(getDepthId($pagePath, 1) == "1"){ ?>
+											간략 검색
+										<?php }else if(getDepthId($pagePath, 1) == "2"){ ?>
+											상세 검색
+										<?php }else if(getDepthId($pagePath, 1) == "3"){ ?>
+											분류검색1
+										<?php }else if(getDepthId($pagePath, 1) == "4"){ ?>
+											분류검색2
+										<?php }else if(getDepthId($pagePath, 1) == "5"){ ?>
+											분류검색3
+										<?php } ?>
+									<?php }else if(getDepthId($pagePath, 0) == "book"){ ?>
+										<?php if(getDepthId($pagePath, 1) == "1"){ ?>
+											신간도서
+										<?php }else if(getDepthId($pagePath, 1) == "2"){ ?>
+											희망도서
+										<?php }else if(getDepthId($pagePath, 1) == "3"){ ?>
+											추천도서
+										<?php }else if(getDepthId($pagePath, 1) == "4"){ ?>
+											권장도서
+										<?php }else if(getDepthId($pagePath, 1) == "5"){ ?>
+											베스트대출목록
+										<?php } ?>
+									<?php }else if(getDepthId($pagePath, 0) == "community"){ ?>
+										<?php if(getDepthId($pagePath, 1) == "1"){ ?>
+											공지사항
+										<?php }else if(getDepthId($pagePath, 1) == "2"){ ?>
+											자주묻는 질문
+										<?php }else if(getDepthId($pagePath, 1) == "3"){ ?>
+											Q&amp;A
+										<?php }else if(getDepthId($pagePath, 1) == "4"){ ?>
+											독후활동
+										<?php }else if(getDepthId($pagePath, 1) == "5"){ ?>
+											자유게시판
+										<?php } ?>
+									<?php }else{ ?>
+										페이지 타이틀
+									<?php } ?>
             					</div>
                 			</h2>
-                			
-                			
 						<?php } ?>
 <!-- //Header.html -->
 

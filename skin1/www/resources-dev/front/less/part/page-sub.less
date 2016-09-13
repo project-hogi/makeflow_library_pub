@@ -77,13 +77,31 @@
 .tar{
 	text-align: right !important;
 }
+.flr{
+	float: right;
+}
+.fll{
+	float: left;
+}
+.mt20{
+	margin-top: 20px;
+}
 .pointer{
 	padding-left: 18px;
 	background: url("@{basePartImageDir}page-sub/pointer.png") no-repeat 5px 50%;
 }
-
-
-
+.point-circle{
+	width: 9px;
+	height: 9px;
+	background-position: -263px 0;
+	margin-right: 5px;
+}
+.point-dot{
+	width: 2px;
+	height: 2px;
+	background-position: -285px 0;
+	margin-right: 5px;
+}
 .btn_group{
 	float: right;
 	margin-top: 17px
@@ -477,10 +495,26 @@
 .btn-style2{
 	width: 60px;
 	height: 22px;
+	line-height: 20px;
 	background-image: url("@{basePartImageDir}page-sub/btn-style2.png");
 	background-repeat:no-repeat;
 }
+.next-green-icon{
+	position: relative;
+	padding-left: 5px;
+	font-size: 10px;
 
+	span{
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		left: 7px;
+		top: 5px;
+		background: url("@{basePartImageDir}page-sub/next-green.png")no-repeat 0 0;
+	}
+
+}
 .size-sm{
 	width: 100px;
 }
@@ -492,6 +526,9 @@
 }
 .size-xl{
 	width: 225px;
+}
+.size-100{
+	width: 500px;
 }
 .ml20{
 	margin-left: 20px;
@@ -509,7 +546,6 @@
 }
 select{
 	box-sizing:content-box;
-	height: 26px;
 }
 .hope-search{
 
@@ -533,21 +569,7 @@ select{
 	}
 
 }
-.next-green-icon{
-	position: relative;
-	padding-left: 10px;
 
-	span{
-		display: block;
-		width: 10px;
-		height: 10px;
-		position: absolute;
-		left: 7px;
-		top: 5px;
-		background: url("@{basePartImageDir}page-sub/next-green.png")no-repeat 0 0;
-	}
-
-}
 
 .tab-tit{
 	font-size: 16px;
@@ -609,7 +631,7 @@ select{
 		background: url("@{basePartImageDir}page-sub/q.gif")no-repeat 5% 50%;
 		border-top: 1px solid #d2d2d2;
 		#util>.ellipsis();
-		
+
 		&:before{
 			display: inline-block;
 			content: '';
@@ -632,20 +654,146 @@ select{
 }
 
 
+.hope-search{
+	width: 480px;
+	height: 110px;
+	padding: 10px 20px 30px;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 1px solid #d2d2d2;
+
+	table{
+		margin-bottom: 10px;
+	}
+
+	&:after{
+		clear: both;display: block;content: '';
+	}
+}
 
 
+.btn-backtolist{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	background: url("@{basePartImageDir}page-sub/btn-backtolist.png")no-repeat 0 0;
 
+}
+.sp,
+.btn-detail-list,
+.btn-green-rewrite,
+.btn-green-report,
+.btn-green-review,
+.btn-green-marc,
+h5 .point,
+.btn-detail-back,
+.btn-detail-search,
+.btn-table-booking{
+	display: inline-block;
+	background-image: url("@{basePartImageDir}page-sub/sp.png");
+	background-repeat:no-repeat;
+	vertical-align: middle;
+}
 
+[class^="btn-detail-"]{
+	width: 58px;
+	height: 20px;
+}
+.btn-detail-back{
+	background-position: 0 0;
+}
+.btn-detail-search{
+	background-position: -63px 0;
+}
+.btn-table-booking{
+	width: 51px;
+	height: 22px;
+	background-position: -129px 0;
+}
+.btn-detail-list{
+	background-position: 0 -20px;
+}
+.btn-detail-answer{
+	background-position: -63px -20px;
+}
+.btn-detail-rewrite{
+	background-position: 0 -57px;
+}
+.btn-detail-delite{
+	background-position: -66px -57px;
+}
+.btn-detail-upload{
+	background-position: -132px -57px;
+}
 
+h5{
+	font-size: 14px;
+	padding: 0;
+	margin: 10px 0;
 
+	.point{
+		width: 5px;
+		height: 13px;
+		background-position: -197px 0;
+		padding-left: 5px;
+	}
 
+}
 
+.btn-green-rewrite,
+.btn-green-report,
+.btn-green-review,
+.btn-green-marc{
+	height: 17px;
+}
+.btn-green-rewrite,
+.btn-green-review{
+	width: 47px;
+}
 
+.btn-green-report,
+.btn-green-marc{
+	width: 59px;
+}
+.btn-green-rewrite{
+	background-position: 0 -40px;
+}
+.btn-green-report{
+	background-position: -52px -40px;
+}
+.btn-green-review{
+	background-position: -116px -40px;
+}
+.btn-green-marc{
+	background-position: -168px -40px;
+}
+.icon-up{
+	width: 15px;
+	height: 15px;
+	background-position: -220px 0;
+	margin-right: 5px;
+}
+.icon-down{
+	width: 15px;
+	height: 15px;
+	background-position: -236px 0;
+	margin-right: 5px;
+}
+.fz12{
+	font-size: 12px;
+}
+.table-box{
+	border: 1px solid #d2d2d2;
 
+	tbody{
+		tr{
+			th{
+				padding-left: 20px;
+			}
+		}
+	}
+}
+.select-tpye-1{
+	height: 25px;
+}
 
-
-
-
-
-
-	
