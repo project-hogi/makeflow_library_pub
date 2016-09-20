@@ -288,6 +288,52 @@ body{
 		font-size: 0;
 	}
 }
+.account-logon{
+	margin-bottom: 31px;
+	height: 150px - 21px;
+	background: url("@{basePartImageDir}layout/account-logon.png") no-repeat 0 0;
+	padding: 7px 15px 0 15px;
+	font-size: 12px;
+
+	.title{
+		padding-left: 20px;
+		height: 18px;
+		line-height: 18px;
+		overflow: hidden;
+
+		.name{
+			color: #20a7d7;
+		}
+	}
+	.my_info{
+		margin-top: 37px;
+		padding-left: 15px;
+		height: 18px;
+		line-height: 18px;
+		overflow: hidden;
+		margin-bottom: 23px;
+
+		.spot{
+			font-weight: bold;
+		}
+	}
+	.btn-logout{
+		width: 59px;
+		height: 18px;
+		background-position: 0 0;
+	}
+	.btn-mypage{
+		float: right;
+		width: 61px;
+		height: 18px;
+		background-position: -74px 0;
+	}
+
+}
+.layout-sp{
+	display: inline-block;
+	background: url(../images/part/layout/layout-sp.png)no-repeat 0 0;
+}
 .dic-search-bar{
 	position: relative;
 	background: url("@{basePartImageDir}layout/dic-search-bar.png") no-repeat 0 0;
@@ -430,9 +476,20 @@ body{
 	
 }
 
+.spot{
+	color: #ff7800;
+}
 
 
 
+
+.clearfix(){
+	&:after{
+		clear: both;
+		display: block;
+		content: '';
+	}
+}
 
 
 

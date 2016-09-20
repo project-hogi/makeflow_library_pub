@@ -2,13 +2,20 @@
 <?php $bodyClass = "layout-page"; ?>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
 <?php require "part/app-header.php"; ?>
-<?php require "part/header.php"; ?>
-    <div class="module-content">
-
-<form><fieldset>
+<?php require "part/header-mypage.php"; ?>
+<div class="module-content mypage-foot">
 
 <table class="table table-primary book-search-form">
     <caption class="hidden">신간도서</caption>
+    <tr>
+    	<th>검색조건</th>
+    	<td>
+    		<input type="checkbox" id="form-borrow-1" value=""/>
+    		<label for="form-borrow-1">검색일자</label>
+    		<input type="checkbox" id="form-borrow-2" value=""/>
+    		<label for="form-borrow-2">도서상태</label>
+    	</td>
+    </tr>
     <tr>
         <th rowspan="2">검색일자</th>
         <td>
@@ -27,20 +34,13 @@
         </td>
     </tr>
     <tr>
-        <th>분류기호</th>
+        <th>도서상태</th>
         <td>
             <select name="" id="" class="size-lg select-tpye-1">
-                <option value="">적용안함</option>
-                <option value="">[000]총류</option>
-                <option value="">[100]철학</option>
-                <option value="">[200]종교</option>
-                <option value="">[300]사회과학</option>
-                <option value="">[400]순수과학</option>
-                <option value="">[500]기술과학</option>
-                <option value="">[600]예술</option>
-                <option value="">[700]언어</option>
-                <option value="">[800]문학</option>
-                <option value="">[900]역사</option>
+                <option value="">전체</option>
+                <option value="">대출 도서</option>
+                <option value="">연체 도서</option>
+                <option value="">반납 도서</option>
             </select>
         </td>
     </tr>
@@ -90,10 +90,9 @@
 
 
 
-    </div>
-    <!-- /.module-content -->
+
+</div>
+<!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-
 
