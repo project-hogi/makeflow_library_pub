@@ -4,8 +4,6 @@
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
     <div class="module-content">
-
-
         <table class="table-primary">
             <tr>
                 <th>
@@ -52,8 +50,6 @@
             <a href="#none" class="btn-detail-upload sp"><span class="sr-only">등록</span></a>
             <a href="community-5.php" class="btn-detail-list sp"><span class="sr-only">목록</span></a>
         </p>
-
-
     </div>
     <!-- /.module-content -->
 <?php require "part/footer.php"; ?>

@@ -22,7 +22,6 @@
             </tr>
             </tbody>
         </table>
-
         <p class="mt20">
             <a href="#none" class="btn-detail-answer sp"><span class="sr-only">답변하기</span></a>
             <span class="flr">
@@ -31,8 +30,6 @@
                 <a href="community-5.php" class="btn-detail-list sp"><span class="sr-only">목록</span></a>
             </span>
         </p>
-
-
         <table class="table table-box table-hover fz12 mt20">
             <tbody>
             <tr>
@@ -54,8 +51,6 @@
             </tbody>
         </table>
     </div>
-
-
     </div>
     <!-- /.module-content -->
 <?php require "part/footer.php"; ?>

@@ -29,14 +29,9 @@
                 <p><span class="sr-only">독후감 :</span><a href="#none"><span>1</span>건</a></p>
                 <p><span class="sr-only">도서리뷰 :</span><a href="#none"><span>0</span>건</a></p>
             </div>
-
-
         </div>
         <!-- /.mypage -->
-
-
     </div>
     <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-

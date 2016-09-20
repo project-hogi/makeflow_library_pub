@@ -4,9 +4,8 @@
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
 <div class="module-content">
-
-    <form><fieldset>
-
+    <form>
+        <fieldset>
             <table class="table book-search-form">
                 <caption class="hidden">신간도서</caption>
                 <tr>
@@ -60,9 +59,8 @@
             <p class="tar">
                 <button type="submit" class="btn-oldst btn-style2">검    색</button>
             </p>
-        </fieldset></form>
-
-
+        </fieldset>
+    </form>
     <table class="table-primary search3">
         <caption><span class="pointer"></span>총 게시물 수 : <span class="counter">0</span>건</caption>
         <thead>
@@ -97,34 +95,10 @@
             <a href="#" class="next page"><span class="sr-only">next-page</span></a>
         </div>
     </div>
-
-
-
+    <p class="tar">
+        <a href="detail-2.php" class="btn-detail-bookreport sp"><span class="sr-only">독후감 쓰기</span></a>
+    </p>
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-
-
-
-
-<select name="ctl00$PlaceHolderCustomer$ddlGroup" id="ctl00_PlaceHolderCustomer_ddlGroup" style="width:155px;">
-    <option selected="selected" value="-1">--소속을 선택하세요--</option>
-    <option value="1;1">운영자 / 없음</option>
-    <option value="2;2">회원 / 없음</option>
-    <option value="3;3">1학년 / 1반</option>
-    <option value="4;4">103동 / 없음</option>
-    <option value="3;5">1학년 / 2반</option>
-    <option value="5;6">2학년 / 1반</option>
-    <option value="5;7">2학년 / 2반</option>
-    <option value="6;8">3학년 / 1반</option>
-    <option value="6;9">3학년 / 2반</option>
-    <option value="7;10">104동 / 없음</option>
-    <option value="7;11">104동 / 없으</option>
-    <option value="8;12">107동 / 없음</option>
-
-</select>
-
-
-

@@ -23,8 +23,6 @@
             </tbody>
         </table>
         <p class="tar mt20"><a href="community-2.php" class="btn-detail-list"><span class="sr-only">목록</span></a></p>
-
-
         <table class="table table-box table-hover fz12">
             <tbody>
             <tr>

@@ -39,7 +39,6 @@
                 <a href="#" class="next page"><span class="sr-only">next-page</span></a>
             </div>
         </div>
-
         <div class="table-search-bar">
             <select name="" id="" class="select-tpye-1">
                 <option value="">제목</option>
@@ -49,9 +48,7 @@
             </select>
             <input type="text" class="size-md">
             <a href="#none" class="btn btn-sm btn-sample1">검 색 <span class="point">&gt;</span></a>
-
         </div>
-
     </div>
     <!-- /.module-content -->
 <?php require "part/footer.php"; ?>

@@ -4,9 +4,8 @@
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
 <div class="module-content">
-
-    <form><fieldset>
-
+    <form>
+        <fieldset>
             <table class="table book-search-form">
                 <caption class="hidden">추천도서</caption>
                 <tr>
@@ -72,13 +71,7 @@
             <a href="#" class="next page"><span class="sr-only">next-page</span></a>
         </div>
     </div>
-
-
-
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-
-

@@ -36,8 +36,6 @@
                 <a href="#" class="next page"><span class="sr-only">next-page</span></a>
             </div>
         </div>
-
-
     </div>
     <!-- /.module-content -->
 <?php require "part/footer.php"; ?>

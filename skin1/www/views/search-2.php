@@ -235,10 +235,6 @@
 	<input type="button" class="btn-oldst rewrite_btn" value="다시쓰기"/>
 </div>
 </form>
-
-
-
-
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>

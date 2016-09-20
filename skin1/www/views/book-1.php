@@ -51,13 +51,13 @@
 </fieldset></form>
 
 
-        <table class="table-primary search3">
+        <table class="table-primary search3 newbook">
             <caption><span class="pointer"></span>검색 도서 : <span class="counter">1</span>건</caption>
             <thead>
             <tr>
                 <th>번호</th>
-                <th><a href="#none">도서명</a></th>
                 <th><a href="#none">표지</a></th>
+                <th><a href="#none">도서명</a></th>
                 <th><a href="#none">저자</a></th>
                 <th><a href="#none">발행처</a></th>
                 <th><a href="#none">발행년</a></th>
@@ -68,8 +68,8 @@
             <tbody>
             <tr>
                 <td>1</td>
-                <td>lorem</td>
-                <td class="tal"><a href="#none">미스터리 심리학:이성을 마비시키는 점술, 유령, 초능력의 진실</a></td>
+                <td class="img_cover"><img src="/resources-dev/front/images/part/page-sub/BOOKBIB53291.jpg" alt="" width="40"></td>
+                <td class="tal"><a href="detail-book.php">미스터리 심리학:이성을 마비시키는 점술, 유령, 초능력의 진실</a></td>
                 <td>리처드 와이즈먼 지음;김영선 옮김</td>
                 <td class="tal">웅진지식하우스</td>
                 <td>2011</td>

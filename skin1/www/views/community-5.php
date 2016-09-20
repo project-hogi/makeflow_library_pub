@@ -48,8 +48,6 @@
         <p class="tar">
             <button type="submit" class="btn-oldst btn-style2">검    색</button>
         </p>
-        
-
     </div>
     <!-- /.module-content -->
 <?php require "part/footer.php"; ?>

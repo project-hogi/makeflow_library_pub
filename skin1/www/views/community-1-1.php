@@ -4,8 +4,6 @@
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
     <div class="module-content">
-
-
         <table class="table-primary">
             <tbody>
             <tr>
@@ -27,8 +25,6 @@
             </tbody>
         </table>
         <p class="tar mt20"><a href="#none" class="btn-detail-list"><span class="sr-only">목록</span></a></p>
-
-
         <table class="table table-box table-hover fz12">
             <tbody>
             <tr>

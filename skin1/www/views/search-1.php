@@ -33,15 +33,11 @@
 		</tr>
 	</table>
 	<div class="btn_group">
-		<input type="submit" class="btn-oldst search_btn" value="검&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;색"/>
+		<a href="search-1-1.php" class="btn-detail-search2 sp"><span class="sr-only">검색</span></a>
 		<input type="button" class="btn-oldst rewrite_btn" value="다시쓰기"/>
 	</div>
 </form>
-
-
-
 </div>
 <!-- /.module-content -->
-
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>

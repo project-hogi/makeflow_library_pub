@@ -4,7 +4,6 @@
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
 <div class="module-content">
-
     <table class="table table-primary">
         <col width="150">
         <col>
@@ -44,12 +43,7 @@
         </tbody>
     </table>
     <p class="tar"><a href="book-2.php" class="btn-backtolist"><span class="sr-only">전체목록 가기</span></a></p>
-
-
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-
-

@@ -24,7 +24,7 @@
         <tbody>
         <tr>
             <td><input type="checkbox"></td>
-            <td class="tal"><a href="community-2-1.php">삼국지.1</a></td>
+            <td class="tal"><a href="detail-2.php">삼국지.1</a></td>
             <td>삼국지</td>
             <td>2016-09-19</td>
             <td>이벤트</td>
@@ -42,14 +42,10 @@
     </div>
         <p>
         <a href="#none" class="btn-detail-delite sp fll"><span class="sr-only">삭제</span></a>
-        <a href="#none" class="btn-detail-bookreport sp flr"><span class="sr-only">독후감쓰기</span></a>
+        <a href="detail-2.php" class="btn-detail-bookreport sp flr"><span class="sr-only">독후감쓰기</span></a>
         </p>
     </form>
-
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-선택 도서명 제목 작성일 이벤트명
-

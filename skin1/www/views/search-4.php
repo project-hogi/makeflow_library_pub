@@ -365,7 +365,7 @@
 				</thead>
 				<tbody>
 				<tr>
-					<td class="tal"><a href="#none">미스터리 심리학:이성을 마비시키는 점술, 유령, 초능력의 진실</a></td>
+					<td class="tal"><a href="detail-book.php">미스터리 심리학:이성을 마비시키는 점술, 유령, 초능력의 진실</a></td>
 					<td>리처드 와이즈먼 지음;김영선 옮김</td>
 					<td class="tal">웅진지식하우스</td>
 					<td>2011</td>
@@ -375,7 +375,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">Time:사진으로 보는 `타임`의 역사와 격동의 현대사</a></td>
+					<td class="tal"><a href="detail-book.php">Time:사진으로 보는 `타임`의 역사와 격동의 현대사</a></td>
 					<td>노베르토 앤젤레티;알베르토 올리바 지음;정명진 옮김</td>
 					<td class="tal">부글북스</td>
 					<td>2012</td>
@@ -385,7 +385,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">고사성어 인문학 강의:네 글자에 담긴 49가지 인생과 철학 이야기</a></td>
+					<td class="tal"><a href="detail-book.php">고사성어 인문학 강의:네 글자에 담긴 49가지 인생과 철학 이야기</a></td>
 					<td>윤지산 지음</td>
 					<td class="tal">디스커버리미디어</td>
 					<td>2011</td>
@@ -395,7 +395,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">통섭의 식탁:최재천 교수가 초대하는 풍성한 지식의 만찬</a></td>
+					<td class="tal"><a href="detail-book.php">통섭의 식탁:최재천 교수가 초대하는 풍성한 지식의 만찬</a></td>
 					<td>최재천 지음</td>
 					<td class="tal">명진출판</td>
 					<td>2012</td>
@@ -405,7 +405,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">e-시사 일반상식</a></td>
+					<td class="tal"><a href="detail-book.php">e-시사 일반상식</a></td>
 					<td>시사문화사편집부 지음</td>
 					<td class="tal">시사문화사</td>
 					<td>2007</td>
@@ -415,7 +415,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">취업 일반상식 2000문제</a></td>
+					<td class="tal"><a href="detail-book.php">취업 일반상식 2000문제</a></td>
 					<td>일반상식편찬위원회 지음</td>
 					<td class="tal">예스폼</td>
 					<td>2010</td>
@@ -425,7 +425,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">(2011)최신시사상식 149집</a></td>
+					<td class="tal"><a href="detail-book.php">(2011)최신시사상식 149집</a></td>
 					<td>시사상식편집부 지음</td>
 					<td class="tal">박문각</td>
 					<td>2010</td>
@@ -435,7 +435,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">Visual C++ 2008 MFC 윈도우 프로그래밍:MFC v9점0 기반</a></td>
+					<td class="tal"><a href="detail-book.php">Visual C++ 2008 MFC 윈도우 프로그래밍:MFC v9점0 기반</a></td>
 					<td>최호성 지음</td>
 					<td class="tal">프리렉</td>
 					<td>2009</td>
@@ -445,7 +445,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">지금 시작하는 인문학:우리 시대가 알아야 할 최소한의 인문 지식</a></td>
+					<td class="tal"><a href="detail-book.php">지금 시작하는 인문학:우리 시대가 알아야 할 최소한의 인문 지식</a></td>
 					<td>주현성 지음</td>
 					<td class="tal">더좋은책</td>
 					<td>2012</td>
@@ -455,7 +455,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="tal"><a href="#none">이어령의 교과서 넘나들기.1:디지털 편, 디지털시대와 우리의 미래</a></td>
+					<td class="tal"><a href="detail-book.php">이어령의 교과서 넘나들기.1:디지털 편, 디지털시대와 우리의 미래</a></td>
 					<td>이어령 [콘텐츠];이동은 글;나연경 그림</td>
 					<td class="tal">살림</td>
 					<td>2011</td>
@@ -487,26 +487,9 @@
 			</div>
 		</div>
 		<!-- /.s4-2 -->
-
 	</div>
 	<!-- /.search4 -->
-
-
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

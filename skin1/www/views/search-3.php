@@ -27,8 +27,6 @@
 	</ul>
 </div>
 <!-- /.tab-menu -->
-
-
 <table class="table-primary search3">
 	<caption><span class="pointer"></span>검색 도서 : <span class="counter">3308</span>건</caption>
   <thead>
@@ -176,12 +174,6 @@
 		<a href="#" class="next page"><span class="sr-only">next-page</span></a>
 	</div>
 </div>
-
-
-
-
-
-
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>

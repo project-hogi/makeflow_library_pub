@@ -4,7 +4,6 @@
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
 <div class="module-content">
-
     <div class="hope-search">
         <form action="">
             <fieldset>
@@ -76,12 +75,10 @@
             <a href="#" class="next page"><span class="sr-only">next-page</span></a>
         </div>
     </div>
-
-
+    <p class="tar">
+        <a href="detail-1.php" class="btn-detail-application sp"></a>
+    </p>
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-
-

@@ -51,10 +51,7 @@
             </div>
         </div>
     </form>
-
 </div>
 <!-- /.module-content -->
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-

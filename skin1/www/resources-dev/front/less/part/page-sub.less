@@ -1,4 +1,5 @@
 .module-content{
+	position: relative;
 	padding-left: 30px;
 	padding-right: 25px;
 	padding: 0 25px 30px 30px;
@@ -20,7 +21,7 @@
 }
 .table-primary{
 	border-collapse: collapse;
-	border-top: 2px solid #8c37d7;
+	border-top: 2px solid /*#8c37d7*/ #a1d700;
 	width: 100%;
 
 	caption{
@@ -40,7 +41,7 @@
 			font-weight: bold;
 			text-align: center;
 			color: #737373;
-			background-color: #f7effd;
+			background-color: /*#f7effd*/ #f3ffd7;
 			padding: 10px;
 			word-wrap: break-word;
 
@@ -57,6 +58,15 @@
 			}
 		}
 	}
+	&.book-info-table{
+		tr{
+			th,
+			td{
+				padding: 5px 10px;
+			}
+		}
+	}
+
 }
 
 .box-md{
@@ -129,6 +139,8 @@
 	text-align: center;
 	#util>.ellipsis();
 
+	//신청
+	//다시쓰기
 	&.search_btn,&.rewrite_btn{
 		background: url("@{basePartImageDir}page-sub/btn_58x20.jpg") no-repeat 0 0;
 	}
@@ -266,6 +278,7 @@
 		}
 	}
 }
+
 .ps{
 	font-size: 11px;margin: 10px 0 5px 0;
 }
@@ -437,7 +450,8 @@
 		background: url("@{basePartImageDir}page-sub/list-search-bottom.png")0 0 no-repeat;
 	}
 }
-.list-search{
+.list-search,
+.list-search2{
 	background: url("@{basePartImageDir}page-sub/list-search1.png")0 0 repeat-y;
 
 	.top{
@@ -472,16 +486,35 @@
 			left: 180px;
 			top: 0;
 			width: 133px;
-		}
 
-		&.on{
-			.list-search{
-				display: block;
+			.list-search2{
+				display: none;
+				position: absolute;
+				left: 210px;
+				top: 0;
+				width: 133px;
+
 			}
 		}
 
+		&.on{
+			&>.list-search{
+				display: block;
+				>ul{
+					>li{
+						&.on{
+							&>.list-search2{
+								display: block;
+							}
+						}
+					}
+				}
+
+			}
+		}
 	}
 }
+
 [class^="btn-style"]{
 	display: table-cell;
 	text-align: center;
@@ -531,7 +564,10 @@
 	width: 500px;
 }
 .ml20{
-	margin-left: 20px;
+	margin-left: 20px !important;
+}
+.pl10{
+	padding-left: 10px !important;
 }
 .module-content {
 	.book-search-form{
@@ -540,8 +576,10 @@
 			border-bottom: 1px solid #d9d9d9;
 			vertical-align: middle;
 
+			input[type="checkbox"]{
+				margin: 0 5px;
+			}
 		}
-
 	}
 }
 select{
@@ -560,14 +598,13 @@ select{
 			text-align: center;
 			font-size: 13px;
 		}
-
-		.next-icon{
-			padding-left: 20px;
-			background: url("@{basePartImageDir}page-sub/next-orange.png")no-repeat 0 50%;
-			font-size: 11px;
-		}
 	}
 
+}
+.next-icon{
+	padding-left: 20px;
+	background: url("@{basePartImageDir}page-sub/next-orange.png")no-repeat 0 50%;
+	font-size: 11px;
 }
 
 
@@ -735,6 +772,36 @@ h5 .point,
 	height: 17px;
 	background-position: -234px -40px;
 }
+.btn-detail-application{
+	width: 82px;
+	height: 22px;
+	background-position: -95px -107px;
+}
+.btn-detail-searching{
+	width: 47px;
+	height: 17px;
+	background-position: -284px -40px;
+}
+.btn-detail-remark{
+	width: 47px;
+	height: 17px;
+	background-position: -335px -40px;
+}
+.btn-detail-search2{
+	width: 58px;
+	height: 20px;
+	background-position: -197px -57px;
+}
+.btn-detail-close2{
+	width: 58px;
+	height: 20px;
+	background-position: -266px -57px;
+}
+.pop-icon{
+	width: 18px;
+	height: 18px;
+	background-position: -303px 0;
+}
 
 h5{
 	font-size: 14px;
@@ -898,6 +965,127 @@ h5{
 	background: url(../images/part/page-sub/mypage-bg.png)no-repeat 0 0;
 }
 
+.change_pw-box{
+	display: none;
+	position: absolute;
+	left: 50%;
+	margin-left: 210px;
+	top: 285px;
+	width: 250px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	background-color: #fff;
+	strong{
+		padding-left: 20px;
+		background: url(../images/part/page-sub/next-green2.png)no-repeat 5px 50%;
+		color: #555
+	}
+	table{
+		margin-top: 10px;
+	}
+	p{
+		margin: 0;
+		margin-top: 10px;
+	}
+}
+.search-1-1{
+	font-size: 12px;
+	border: 1px solid #ccc;
+	height: 34px;
+	line-height: 34px;
+	.category-style{
+		span{
+
+			&:before{
+				display: inline-block;
+				content: '>';
+				padding: 0 5px;
+				color: #999;
+			}
+			&:first-child{
+				margin-left: 10px;
+
+				&:before{
+					display: none;
+				}
+
+			}
+		}
+	}
+
+	p{
+		margin: 0;
+		float: right;
+	}
+	p:first-child{
+		 float: left;
+	 }
+	input[type="text"]{
+		line-height: 1.2;
+	}
+	.sp{
+		vertical-align: middel;
+		margin-bottom: 2px;
+	}
+
+	label{
+		font-weight: normal;
+	}
+}
+.custom-position{
+	position: relative;
+	left: 0;
+	top: 35px;
+}
+label,
+input[type="checkbox"],
+input[type="radio"]{
+	margin: 0 2px;
+	vertical-align: middle;
+}
+
+
+.pop-green{
+	display: none;
+	z-index: 200;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	height: 580px;
+	margin-left: -260px;
+	margin-top: -300px;
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid #ccc;
+
+	&.on{
+		display: block;
+	}
+	table{
+		height: 500px;
+		overflow: hidden;
+	}
+
+	.btn-detail-close2{
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		margin-left: -29px;
+	}
+
+}
+.newbook{
+	tbody{
+		tr{
+			.img_cover{
+				img{
+					width: 40px;
+				}
+			}
+		}
+	}
+}
 
 
 
