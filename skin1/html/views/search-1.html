@@ -39,7 +39,6 @@
 							<li><a href="introduce-6.html">이용안내</a></li>
 							<li><a href="introduce-7.html">일정관리</a></li>
 						</ul>
-
 					</li>
 					<li class="on">
 						<a href="search-1.html">도서검색</a>
@@ -91,84 +90,65 @@
 				<div class="container">
 					<span class="qnb"></span>
 											<div class="snb sub-page">
-							<form action="" method="post">
-    							<div class="account">
-    								<storng class="title sr-only">Member Login</storng>
-    								<div class="forms">
-        								<label><span class="sr-only">ID</span> <input type="text" /></label>
-        								<label><span class="sr-only">PW</span> <input type="password" /></label>
-    								</div>
-    								<span class="find-id-and-pw">
-        								<a href="#">아이디</a> / 
-        								<a href="#">비밀번호찾기</a> 
+							<div class="account">
+								<form action="" method="post">
+
+									<storng class="title sr-only">Member Login</storng>
+									<div class="forms">
+										<label><span class="sr-only">ID</span> <input type="text" /></label>
+										<label><span class="sr-only">PW</span> <input type="password" /></label>
+									</div>
+									<span class="find-id-and-pw">
+        								<a href="#">아이디</a> /
+        								<a href="#">비밀번호찾기</a>
     								</span>
-    								<input type="submit" class="submit" value="Login" />
-    							</div>
-							</form>
+									<input type="submit" class="submit" value="Login" />
+								</form>
+							</div>
+							<!--로그인시-->
+							<div class="account-logon">
+								<form action="" method="post">
+									<storng class="title"><span class="name">홍길동</span>님 반갑습니다. </storng>
+									<div class="my_info">
+										<strong class="sr-only">도서대출정보</strong>
+										<p>대출 : <span class="spot">0</span>건 / 전체 <span class="spot">6</span>건</p>
+									</div>
+									<p><a href="#none" class="btn-logout layout-sp"><span class="sr-only">logout</span></a><a href="mypage-1.html" class="btn-mypage layout-sp"><span class="sr-only">mypage</span></a></p>
+								</form>
+							</div>
+
 							<form action="" method="post">
-    							<div class="dic-search-bar">
-    								<input type="text" />
-    								<input type="submit" class="submit" />
-    							</div>
+								<div class="dic-search-bar">
+									<input type="text" />
+									<input type="submit" class="submit" onclick="event.preventDefault(); alert('준비중입니다.');"/>
+								</div>
 							</form>
 							<div class="sub_introduce">
 								<div class="head"><span class="sr-only">도서관 소개</span></div>
 								<ul>
-									<li><a href="#none">인사말</a></li>
-									<li><a href="#none">도서관소개</a></li>
-									<li><a href="#none">연혁</a></li>
-									<li><a href="#none">찾아오시는 길</a></li>
-									<li><a href="#none">시설현황</a></li>
-									<li><a href="#none">이용안내</a></li>
-									<li><a href="#none">일정관리</a></li>
+									<li><a href="introduce-1.html">인사말</a></li>
+									<li><a href="introduce-2.html">도서관소개</a></li>
+									<li><a href="introduce-3.html">연혁</a></li>
+									<li><a href="introduce-4.html">찾아오시는 길</a></li>
+									<li><a href="introduce-5.html">시설현황</a></li>
+									<li><a href="introduce-6.html">이용안내</a></li>
+									<li><a href="introduce-7.html">일정관리</a></li>
 								</ul>
 							</div>
 							<div class="quick_link">
-								<li class="eq-01"><a href="#none"><span class="sr-only">예약 도서</span></a></li>
-								<li class="eq-02"><a href="#none"><span class="sr-only">대출 조회</span></a></li>
-								<li class="eq-03"><a href="#none"><span class="sr-only">독후감 쓰기</span></a></li>
+								<li class="eq-01"><a href="mypage-3.html"><span class="sr-only">예약 도서</span></a></li>
+								<li class="eq-02"><a href="mypage-4.html"><span class="sr-only">대출 조회</span></a></li>
+								<li class="eq-03"><a href="mypage-2.html"><span class="sr-only">독후감 쓰기</span></a></li>
 							</div>
 
-					</div>
-					    				<div id="content">
-						                			<h2 class="page-title">
-            					<div>
+						</div>
+										<div id="content">
+													<h2 class="page-title">
+								<div>
 																														간략 검색
-																			            					</div>
-                			</h2>
-						<!-- //Header.html -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="module-content">
+																											</div>
+							</h2>
+												<!-- //Header.html --><div class="module-content">
 
 <form action="">
 	<table class="table-primary search1">
@@ -198,36 +178,110 @@
 		</tr>
 	</table>
 	<div class="btn_group">
-		<input type="submit" class="btn-oldst search_btn" value="검&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;색"/>
+		<a href="search-1-1.html" class="btn-detail-search2 sp"><span class="sr-only">검색</span></a>
 		<input type="button" class="btn-oldst rewrite_btn" value="다시쓰기"/>
 	</div>
 </form>
-
-
-
 </div>
 <!-- /.module-content -->
-
 <!-- Footer.html -->
-    				</div>
-				</div>
-			</div>
-			<div class="container-footer">&nbsp;</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-    		COPYRIGHT ⓒ PHOSEBIBTEC CO.,LTD. ALL RIGHTS RESERVED.
-    		<a href="mailto:" class="email">이메일보내기</a>
-    		<ul class="counter">
-    			<li>Today : 7</li>
-    			<li>Total : 671</li>
-    		</ul>
-		</div>
-	</div>
 </div>
-<!-- //Footer.html -->
-<!-- App Footer.html -->
+</div>
+</div>
+<div class="container-footer">&nbsp;</div>
+</div>
+</div>
+<div id="footer">
+    <div class="container">
+        COPYRIGHT ⓒ PHOSEBIBTEC CO.,LTD. ALL RIGHTS RESERVED.
+        <a href="mailto:" class="email">이메일보내기</a>
+        <ul class="counter">
+            <li>Today : 7</li>
+            <li>Total : 671</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- popup content -->
+<div class="pop-green pop-green-rewrite">
+    <p><span class="pop-icon sp pl10"></span><strong>서평</strong></p>
+    <table class="table-primary">
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tbody>
+    </table>
+    <a href="#none" class="btn-detail-close2 sp"></a>
+</div>
+<!-- /.green-rewrite -->
+<div class="pop-green pop-green-report">
+    <p><span class="pop-icon sp pl10"></span><strong>독후감</strong></p>
+    <table class="table-primary">
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tbody>
+    </table>
+    <a href="#none" class="btn-detail-close2 sp"></a>
+</div>
+<!-- /.green-report -->
+<div class="pop-green pop-green-review">
+    <p><span class="pop-icon sp pl10"></span><strong>리뷰</strong></p>
+    <table class="table-primary">
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tbody>
+    </table>
+    <a href="#none" class="btn-detail-close2 sp"></a>
+</div>
+<!-- /.green-review -->
+<div class="pop-green pop-green-marc">
+    <p><span class="pop-icon sp pl10"></span><strong>MARC</strong></p>
+    <table class="table-primary">
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tbody>
+    </table>
+    <a href="#none" class="btn-detail-close2 sp"></a>
+</div>
+<!-- /.green-marc -->
+<!-- //popup content -->
+<!-- //Footer.html --><!-- App Footer.html -->
 </body>
 </html>
 <!-- //App Footer.html -->
