@@ -293,16 +293,19 @@
 	.page-control{
 		display: inline-block;
 		position: relative;
-		left: 8px;
+		left: 0px;
 		top: 5px;
-
+		
 		.next{
 			display: inline-block;
 			width: 12px;
 			height: 11px;
 			background: url("@{basePartImageDir}page-sub/next-icon.png") no-repeat 0 0;
 
-
+			&.prev{
+				background-image: url("@{basePartImageDir}page-sub/prev-icon.png");
+			}
+			
 			&.tab{
 				background-position: 3px 3px;
 			}

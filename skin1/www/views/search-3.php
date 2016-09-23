@@ -157,6 +157,10 @@
 </table>
 <p class="pointer ps">검색 결과를 정렬하려면, 위의 필드명(서명, 저자, 발행처, 발행년)을 클릭하세요.</p>
 <div class="table-pager">
+	<div class="page-control prev">
+		<a href="#" class="next prev tab"><span class="sr-only">next-tab</span></a>
+		<a href="#" class="next prev page"><span class="sr-only">next-page</span></a>
+	</div>
 	<div class="pager_list">
 		<a href="#">1</a>
 		<a href="#">2</a>
