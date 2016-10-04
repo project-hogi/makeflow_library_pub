@@ -94,8 +94,6 @@
 									<p><a href="#none" class="btn-logout layout-sp"><span class="sr-only">logout</span></a><a href="mypage-1.php" class="btn-mypage layout-sp"><span class="sr-only">mypage</span></a></p>
 								</form>
 							</div>
-
-
 							<form action="" method="post">
 								<div class="dic-search-bar">
 									<input type="text" />
@@ -220,7 +218,7 @@
 								</div>
 							</form>
 							<div class="sub_introduce">
-								<div class="head"><span class="sr-only">도서관 소개</span></div>
+								<div class="head"><span>도서관 소개</span></div>
 								<ul>
 									<li><a href="introduce-1.php">인사말</a></li>
 									<li><a href="introduce-2.php">도서관소개</a></li>

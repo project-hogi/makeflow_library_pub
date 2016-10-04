@@ -1,0 +1,75 @@
+
+body{
+
+  &.skin2{
+    background: url("@{basePartImageDir}skin2/layout/bg.jpg") repeat-x 50% 0;
+
+    .page-index {
+      .visual {
+        background: url("@{basePartImageDir}skin2/page-index/visual.jpg") no-repeat 0 0;
+      }
+    }
+
+    .account {
+      background: url("@{basePartImageDir}skin2/layout/account.png") no-repeat 0 0;
+    }
+
+    .account-logon {
+      background: url("@{basePartImageDir}skin2/layout/account-logon.png") no-repeat 0 0;
+    }
+
+    .sub_introduce {
+      .head {
+        background: url("@{basePartImageDir}skin2/layout/sub_intro.png") no-repeat 0 0;
+      }
+      ul {
+        li {
+          background: url("@{basePartImageDir}skin2/layout/sub_introduce-1.png") no-repeat 17px 6px;
+        }
+      }
+    }
+
+    .table-primary{
+      border-top: 2px solid #8c37d7;
+
+      tr {
+        th {
+          background-color: #f7effd;
+        }
+      }
+    }
+
+    .lnb{
+      >ul{
+        >li{
+          >a{
+            background: url("@{basePartImageDir}skin2/layout/lnb.png") no-repeat 0 50%;
+
+            &:hover, &:focus{
+              background: #3ccbf7;
+              color: #fff;
+            }
+          }
+          &.on{
+            >a{
+              background: #9777f7;
+              color: #fff;
+
+            }
+          }
+          &.over-on{
+            >a{
+              background: #9777f7;
+              color: #fff;
+            }
+          }
+
+
+        }
+      }
+    }
+
+
+
+  }
+}
